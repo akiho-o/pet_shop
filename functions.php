@@ -6,11 +6,11 @@ function connectDb()
 {
     try {
         return new PDO(
-        DSN,
-        USER,
-        PASSWORD,
-        [PDO::ATTR_ERRMODE =>
-        PDO::ERRMODE_EXCEPTION]
+            DSN,
+            USER,
+            PASSWORD,
+            [PDO::ATTR_ERRMODE =>
+            PDO::ERRMODE_EXCEPTION]
         );
     } catch (PDOException $e) {
         echo $e->getMessage();
